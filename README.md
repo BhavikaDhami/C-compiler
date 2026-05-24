@@ -1,31 +1,36 @@
-⚙️ C Compiler Project
+C Compiler Project
 
-This project is a basic **C Compiler** built from scratch. It demonstrates the core phases of compilation, including **lexical analysis**, **syntax analysis**, and **code generation**.
-
----
-
-## 📌 Project Highlights
-
-- 🧾 Lexical Analyzer (Lexer)
-- 📐 Syntax Analyzer (Parser)
-- 🏗️ Intermediate Code Generation
-- ✅ Error detection and reporting
-- 🖥️ Command-line interface for compiling C programs
+A basic C Compiler built from scratch that demonstrates the fundamental phases of compilation, including lexical analysis, syntax analysis, and intermediate code generation.
 
 ---
 
-## 🛠️ Technologies Used
-
-- C Language
-- Lex and Yacc / Flex and Bison *(if applicable)*
-- GCC (GNU Compiler Collection)
-- Windows/Linux Terminal
+✨ Features
+ Lexical Analysis using a custom lexer
+ Syntax Analysis with parser implementation
+ Intermediate Code Generation
+ Error detection and reporting
+ Command-line based compilation workflow
+ Token parsing and grammar validation
 
 ---
 
-🧪 How to Run
+🛠️ Technologies Used
+C Language
+Lex & Yacc / Flex & Bison
+GCC (GNU Compiler Collection)
+Windows/Linux Terminal
 
-### Step 1: Compile using Lex and Yacc
+---
+
+📍 The Process
+
+This project was built to understand how compilers work behind the scenes. Instead of only studying compiler design theoretically, I wanted to implement the core phases myself. I started by creating a lexical analyzer to tokenize C source code, then implemented syntax analysis using parsing rules and grammar validation. After building the parser, I added intermediate code generation and error handling to simulate the compilation process more realistically. The project helped me gain a deeper understanding of language processing, parsing techniques, and compiler architecture.
+
+---
+
+🚦 How to Run
+
+Step 1: Generate Compiler Files
 
 lex lexer.l
 yacc -d parser.y
@@ -37,8 +42,4 @@ Step 2: Run the Compiler
 
 Replace test.c with your own C source file.
 
-💡 Make sure flex and bison are installed if you're using them.
-
-✨ Author
-Bhavika Dhami
-🔗 GitHub
+💡 Make sure flex and bison are installed before running the project.
